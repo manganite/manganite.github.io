@@ -1,11 +1,14 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Thomas Lottermoser – Web-Apps zu Kristallographie, nichtlinearer Optik und Simulation</title>
-<meta name="description" content="Interaktive Web-Apps von Thomas Lottermoser (ETH Zürich): Stereographische Projektion, Ebenengruppen, Birss-App für Suszeptibilitätstensoren sowie Monte-Carlo-Simulationen.">
+<title>Thomas Lottermoser – Web apps for crystallography, nonlinear optics and simulation</title>
+<meta name="description" content="Interactive web apps by Thomas Lottermoser (ETH Zurich): stereographic projection, plane groups, the Birss app for susceptibility tensors, symmetry and spin-model libraries, and Monte Carlo simulations.">
 <link rel="canonical" href="https://manganite.github.io/">
+<link rel="alternate" hreflang="en" href="https://manganite.github.io/">
+<link rel="alternate" hreflang="de" href="https://manganite.github.io/de/">
+<link rel="alternate" hreflang="x-default" href="https://manganite.github.io/">
 <style>
   body{font-family:system-ui,sans-serif;max-width:46rem;margin:2rem auto;padding:0 1rem;line-height:1.55;color:#222}
   h1{margin-bottom:.2rem} h2{margin-top:2rem;border-bottom:1px solid #ddd;padding-bottom:.2rem}
@@ -13,50 +16,51 @@
   a{color:#0b57d0}
 </style>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Person","name":"Thomas Lottermoser","affiliation":{"@type":"CollegeOrUniversity","name":"ETH Zürich"},"url":"https://manganite.github.io/","sameAs":["https://github.com/manganite"]}
+{"@context":"https://schema.org","@type":"Person","name":"Thomas Lottermoser","affiliation":{"@type":"CollegeOrUniversity","name":"ETH Zurich"},"url":"https://manganite.github.io/","sameAs":["https://github.com/manganite"]}
 </script>
 </head>
 <body>
 <header>
+  <p class="sub">English · <a href="/de/" hreflang="de" lang="de">Deutsch</a></p>
   <h1>Thomas Lottermoser</h1>
-  <p>ETH Zürich, Departement Materialwissenschaft – Forschung zu Multiferroika, Domänenwänden und nichtlinearer Optik (Second-Harmonic Generation). Hier sammle ich meine interaktiven Web-Apps. Quellcode: <a href="https://github.com/manganite">github.com/manganite</a>.</p>
+  <p>ETH Zurich, Department of Materials – research on multiferroics, domain walls and nonlinear optics (second-harmonic generation). This page collects my interactive web apps. Source code: <a href="https://github.com/manganite">github.com/manganite</a>.</p>
 </header>
 <main>
-  <h2>Kristallographie und Symmetrie</h2>
+  <h2>Crystallography and symmetry</h2>
   <ul>
-    <li><a href="/stereography/">Stereographische Projektion</a><br>
-      <span class="sub">Stereogramme der 32 kristallographischen Punktgruppen und ihrer Kristallformen mit gekoppelter 3D-Konstruktion.
-      · <a href="/stereography/skript.html">Skript</a> · <a href="/stereography/quiz.html">Quiz</a> · <a href="/stereography/hilfe.html">Hilfe</a> · <a href="https://github.com/manganite/stereography">GitHub</a></span></li>
-    <li><a href="/plane-groups/">Symmetrie in der Ebene</a><br>
-      <span class="sub">Periodische Muster in der Ebene: die 17 Ebenengruppen mit Symmetrieelementen, Wyckoff-Positionen und asymmetrischen Einheiten.
-      · <a href="/plane-groups/skript.html">Skript</a> · <a href="/plane-groups/quiz.html">Quiz</a> · <a href="/plane-groups/hilfe.html">Hilfe</a> · <a href="https://github.com/manganite/plane-groups">GitHub</a></span></li>
+    <li><a href="/stereography/">Stereographic Projection</a><br>
+      <span class="sub">Stereograms of the 32 crystallographic point groups and their crystal forms, with coupled 3D construction (German-language app).
+      · <a href="/stereography/skript.html">Script</a> · <a href="/stereography/quiz.html">Quiz</a> · <a href="/stereography/hilfe.html">Help</a> · <a href="https://github.com/manganite/stereography">GitHub</a></span></li>
+    <li><a href="/plane-groups/">Symmetry in the Plane</a><br>
+      <span class="sub">Periodic patterns in the plane: the 17 plane groups with their symmetry elements, Wyckoff positions and asymmetric units (German-language app).
+      · <a href="/plane-groups/skript.html">Script</a> · <a href="/plane-groups/quiz.html">Quiz</a> · <a href="/plane-groups/hilfe.html">Help</a> · <a href="https://github.com/manganite/plane-groups">GitHub</a></span></li>
   </ul>
 
-  <h2>Nichtlineare Optik</h2>
+  <h2>Nonlinear optics</h2>
   <ul>
     <li><a href="/birss-app/">The Birss App</a><br>
-      <span class="sub">Nichtverschwindende Suszeptibilitätskomponenten (elektrischer Dipol, magnetischer Dipol, elektrischer Quadrupol) und SHG-Quellterme für die 32 kristallographischen und 122 magnetischen Punktgruppen.
+      <span class="sub">Non-zero susceptibility tensor components (electric dipole, magnetic dipole, electric quadrupole) and induced SHG source terms for the 32 crystallographic and 122 magnetic point groups.
       · <a href="https://github.com/manganite/birss-app">GitHub</a></span></li>
   </ul>
 
-  <h2>Software-Bibliotheken und Dokumentation</h2>
+  <h2>Software libraries and documentation</h2>
   <ul>
     <li><a href="/symcrys/">symcrys</a><br>
-      <span class="sub">Symmetrie-Bibliothek für TypeScript/JavaScript und Python: 32 Kristallklassen und 122 magnetische Punktgruppen, Tensorformen und benannte Eigenschaften.
-      · <a href="/symcrys/getting-started.html">Erste Schritte</a> · <a href="/symcrys/tensors.html">Tensoren</a> · <a href="/symcrys/reference/index.html">Referenz</a> · <a href="https://github.com/manganite/symcrys">GitHub</a></span></li>
+      <span class="sub">Symmetry library for TypeScript/JavaScript and Python: the 32 crystal classes and 122 magnetic point groups, tensor forms and named properties.
+      · <a href="/symcrys/getting-started.html">Getting started</a> · <a href="/symcrys/tensors.html">Tensors</a> · <a href="/symcrys/reference/index.html">Reference</a> · <a href="https://github.com/manganite/symcrys">GitHub</a></span></li>
     <li><a href="/VibeSpin/">VibeSpin</a><br>
-      <span class="sub">Python-Framework zur Simulation und Analyse zweidimensionaler Spinmodelle (Ising, XY, Clock) mit Monte Carlo.
-      · <a href="/VibeSpin/introduction.html">Einführung</a> · <a href="/VibeSpin/physics.html">Physik</a> · <a href="/VibeSpin/api/modules.html">API</a> · <a href="https://github.com/manganite/VibeSpin">GitHub</a></span></li>
+      <span class="sub">Python framework for simulating and analyzing two-dimensional spin models (Ising, XY, Clock) with Monte Carlo methods.
+      · <a href="/VibeSpin/introduction.html">Introduction</a> · <a href="/VibeSpin/physics.html">Physics</a> · <a href="/VibeSpin/api/modules.html">API</a> · <a href="https://github.com/manganite/VibeSpin">GitHub</a></span></li>
   </ul>
 
-  <h2>Simulationen</h2>
+  <h2>Simulations</h2>
   <ul>
     <li><a href="/Ising-simulator/">2D Ising Model Multi-Sim</a><br>
-      <span class="sub">Simulationen des zweidimensionalen Ising-Modells. · <a href="https://github.com/manganite/Ising-simulator">GitHub</a></span></li>
-    <li><a href="/bundesliga/">Bundesliga-Simulator</a><br>
-      <span class="sub">Monte-Carlo-Prognose für Meisterschaft, Europapokal-Qualifikation und Abstieg. · <a href="https://github.com/manganite/bundesliga">GitHub</a></span></li>
-    <li><a href="/wm2026/">WM 2026 – Monte-Carlo-Ausblick</a><br>
-      <span class="sub">Monte-Carlo-Simulation der Fussball-WM 2026 im Browser, aktualisiert mit echten Spielergebnissen. · <a href="https://github.com/manganite/wm2026">GitHub</a></span></li>
+      <span class="sub">Simulations of the two-dimensional Ising model. · <a href="https://github.com/manganite/Ising-simulator">GitHub</a></span></li>
+    <li><a href="/bundesliga/">Bundesliga Simulator</a><br>
+      <span class="sub">Monte Carlo forecast of the title race, European qualification and relegation (German-language page). · <a href="https://github.com/manganite/bundesliga">GitHub</a></span></li>
+    <li><a href="/wm2026/">WC 2026 – Monte Carlo Outlook</a><br>
+      <span class="sub">In-browser Monte Carlo simulation of the 2026 FIFA World Cup, updated with real match results. · <a href="https://github.com/manganite/wm2026">GitHub</a></span></li>
   </ul>
 </main>
 </body>
