@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://manganite.github.io/sitemap.xml
+Sitemap: https://manganite.github.io/symcrys/sitemap.xml
